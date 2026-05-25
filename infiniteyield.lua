@@ -354,7 +354,7 @@ Title.BorderSizePixel = 0
 Title.Size = UDim2.new(0, 250, 0, 20)
 Title.Font = Enum.Font.SourceSans
 Title.TextSize = 18
-Title.Text = "Infinite Yield FE v" .. currentVersion
+Title.Text = "finlandhook"
 
 do
 	local emoji = ({
@@ -10445,6 +10445,11 @@ end)
 addcmd("explorer", {"dex"}, function(args, speaker)
 	notify("Loading", "Hold on a sec")
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/infyiff/backup/main/dex.lua"))()
+end)
+
+addcmd("newdex", {"ndex"}, function(args, speaker)
+	notify("Loading", "Hold on a sec")
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/drifter987/roblox/refs/heads/main/dex.lua"))()
 end)
 
 addcmd('olddex', {'odex'}, function(args, speaker)
