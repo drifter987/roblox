@@ -10453,6 +10453,11 @@ addcmd("newdex", {"ndex"}, function(args, speaker)
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/drifter987/roblox/refs/heads/main/dex.lua"))()
 end)
 
+addcmd("fixitup", {"fiu"}, function(args, speaker)
+	notify("Loading", "Hold on a sec")
+	loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/fe2935b14103e7d8c9a4ce531f9590f9.lua"))()
+end)
+
 addcmd('olddex', {'odex'}, function(args, speaker)
 	notify('Loading old explorer', 'Hold on a sec')
 
