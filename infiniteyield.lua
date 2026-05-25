@@ -4467,6 +4467,7 @@ CMDs[#CMDs + 1] = {NAME = 'explorer / dex', DESC = 'Opens DEX by Moon'}
 CMDs[#CMDs + 1] = {NAME = 'olddex / odex', DESC = 'Opens Old DEX by Moon'}
 CMDs[#CMDs + 1] = {NAME = 'newdex / ndex', DESC = 'Opens DEX by Chillz'}
 CMDs[#CMDs + 1] = {NAME = 'remotespy / rspy', DESC = 'Opens Simple Spy V3'}
+CMDs[#CMDs + 1] = {NAME = 'hydroxide / hxd', DESC = 'Opens Hydroxide'}
 CMDs[#CMDs + 1] = {NAME = 'audiologger / alogger', DESC = 'Opens Edges audio logger'}
 CMDs[#CMDs + 1] = {NAME = 'serverinfo / info', DESC = 'Gives you info about the server'}
 CMDs[#CMDs + 1] = {NAME = 'serverscan', DESC = 'Scans strings for server references and reconstructs them'}
@@ -10456,6 +10457,12 @@ end)
 addcmd("fixitup", {"fiu"}, function(args, speaker)
 	notify("Loading", "Hold on a sec")
 	loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/fe2935b14103e7d8c9a4ce531f9590f9.lua"))()
+end)
+
+addcmd("hydroxide", {"hxd"}, function(args, speaker)
+	notify("Loading", "Hold on a sec")
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Upbolt/Hydroxide/revision/init.lua"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Upbolt/Hydroxide/revision/ui/main.lua"))()
 end)
 
 addcmd('olddex', {'odex'}, function(args, speaker)
